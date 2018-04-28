@@ -129,9 +129,7 @@ function waitForHiddenWindow() {
         // completely. However, in practice, on Windows this seems to lead
         // to a broken Firefox appearance. To avoid this, we only create the
         // windowless browser here. We'll use that rather than the hidden
-        // window for the actual background page (windowless browsers are
-        // also what the webextension implementation in Firefox uses for
-        // background pages).
+        // window for the actual background page.
         let { Services } = Cu.import('resource://gre/modules/Services.jsm', null);
         if ( Services.vc.compare(Services.appinfo.platformVersion, '27') >= 0 ) {
             getWindowlessBrowserFrame(appShell);
