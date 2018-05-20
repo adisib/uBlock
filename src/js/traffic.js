@@ -971,7 +971,7 @@ var injectCSP = function(pageStore, details) {
         return;
     }
 
-    µb.updateToolbarIcon(tabId, 0x02);
+    µb.updateBadgeAsync(tabId);
 
     // Use comma to merge CSP directives.
     // Ref.: https://www.w3.org/TR/CSP2/#implementation-considerations
