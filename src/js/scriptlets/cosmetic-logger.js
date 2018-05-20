@@ -252,3 +252,23 @@ vAPI.domWatcher.addListener(handlers);
 /******************************************************************************/
 
 })();
+
+
+
+
+
+
+
+
+/*******************************************************************************
+
+    DO NOT:
+    - Remove the following code
+    - Add code beyond the following code
+    Reason:
+    - https://github.com/gorhill/uBlock/pull/3721
+    - uBO never uses the return value from injected content scripts
+
+**/
+
+void 0;
